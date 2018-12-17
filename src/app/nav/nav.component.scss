@@ -1,0 +1,15 @@
+.mat-toolbar.mat-primary {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-items-container {
+  height: 100%;
+
+  .nav-item {
+    height: 100%;
+  }
+}
