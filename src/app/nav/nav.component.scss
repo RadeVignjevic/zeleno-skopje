@@ -1,15 +1,29 @@
 .mat-toolbar.mat-primary {
   display: flex;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  transition: 0.7s;
+}
+
+.transparent {
+  background-color: transparent;
+
+  /deep/ .mat-button-focus-overlay {
+    display: none
+  }
 }
 
 .nav-items-container {
   height: 100%;
+  padding: 30%;
 
   .nav-item {
     height: 100%;
+    font-size: 1.9rem;
+    &:hover {
+      color: #ffc400,;
+    }
   }
 }

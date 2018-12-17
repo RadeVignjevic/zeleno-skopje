@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { WINDOW_PROVIDERS } from './window.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     MatListModule,
     SlideshowModule
   ],
-  providers: [],
+  providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
