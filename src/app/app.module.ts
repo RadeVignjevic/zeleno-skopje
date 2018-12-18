@@ -12,13 +12,15 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { WINDOW_PROVIDERS } from './window.service';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { AboutComponent } from './about/about.component';
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SlideshowComponent,
     FormComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    HttpClientModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
