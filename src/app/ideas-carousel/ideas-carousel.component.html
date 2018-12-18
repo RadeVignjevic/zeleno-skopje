@@ -1,4 +1,4 @@
-<section id="testimonials-section" class="testimonials-section home-section" [ngClass]="{'light-gray': backgroundGray}">
+<section id="ideas-section" class="ideas-section home-section" [ngClass]="{'light-gray': backgroundGray}">
   <div class="container">
     <div class="section-header">
       <h2>Recent Ideas</h2>
@@ -8,13 +8,13 @@
     </div>
   <ngu-carousel
   [inputs]="carouselOptions">
-    <ngu-item NguCarouselItem *ngFor="let tm of testimonials">
+    <ngu-item NguCarouselItem *ngFor="let idea of ideas">
         <mat-card class="p-0">
             <mat-card-content class="">
-              <p class="text">{{tm.text}}</p>
+              <p class="text">{{idea.text}}</p>
               <div class="user-detail">
-                <span class="user-title">{{tm.title}}</span>
-                <span class="user-subtitle text-muted">{{tm.subtitle}}</span>
+                <span class="user-title">{{idea.title}}</span>
+                <span class="user-subtitle text-muted">{{idea.city}}</span>
               </div>
             </mat-card-content>
         </mat-card>

@@ -2,28 +2,32 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
 
 @Component({
-  selector: 'app-testimonials-carousel',
-  templateUrl: './testimonials-carousel.component.html',
-  styleUrls: ['./testimonials-carousel.component.scss']
+  selector: 'app-ideas-carousel',
+  templateUrl: './ideas-carousel.component.html',
+  styleUrls: ['./ideas-carousel.component.scss']
 })
-export class TestimonialsCarouselComponent implements OnInit {
+export class IdeasCarouselComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray: any;
   public carouselOptions: NguCarousel;
-  public testimonials = [{
-    text: `“I’ve tried using different softwares. The computer is not my strong side. 
-    There is excellent support behind DevEgret and people to walk you through it. 
-    If you have any questions they’ll go over that and explain to you how to do that. ”`,
+  public ideas = [{
+    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
+    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
     title: 'Jhone Doe',
     city: 'Skopje'
   }, {
     text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
     atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Adam Smith',
+    title: 'Adamr Smith',
     city: 'Kavadarci'
   }, {
     text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
     atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
     title: 'Jhone White',
+    city: 'Skopje'
+  }, {
+    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
+    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
+    title: 'Davor White',
     city: 'Skopje'
   }, {
     text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,

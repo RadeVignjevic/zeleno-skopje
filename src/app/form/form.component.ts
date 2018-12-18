@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import { MatAutocompleteModule } from '@angular/material';
 import {MatSnackBar} from '@angular/material';
 
 @Component({
@@ -18,7 +17,7 @@ export class FormComponent implements OnInit{
   addressForm = this.fb.group({
     firstName: [null, Validators.required],
     lastName: [null, Validators.required],
-    city: [null, Validators.required],
+    city: [this.cityControl, Validators.required],
     email: [null, Validators.email],
     idea: [null, Validators.required]
   });

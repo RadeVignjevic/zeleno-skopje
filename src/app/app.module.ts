@@ -13,7 +13,7 @@ import { WINDOW_PROVIDERS } from './window.service';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { TestimonialsCarouselComponent } from './testimonials-carousel/testimonials-carousel.component';
+import { IdeasCarouselComponent } from './ideas-carousel/ideas-carousel.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
 
@@ -23,7 +23,7 @@ import { NguCarouselModule } from '@ngu/carousel';
     NavComponent,
     SlideshowComponent,
     FormComponent,
-    TestimonialsCarouselComponent
+    IdeasCarouselComponent
   ],
   imports: [
     NguCarouselModule,
