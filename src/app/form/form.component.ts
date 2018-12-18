@@ -18,7 +18,7 @@ export class FormComponent implements OnInit{
   addressForm = this.fb.group({
     firstName: [null, Validators.required],
     lastName: [null, Validators.required],
-    city: [this.cityControl, Validators.required],
+    city: [null, Validators.required],
     email: [null, Validators.email],
     idea: [null, Validators.required]
   });
