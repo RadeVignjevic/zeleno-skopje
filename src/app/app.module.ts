@@ -7,15 +7,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, MatSnackBarModule, MatAutocompleteModule} from '@angular/material';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { WINDOW_PROVIDERS } from './window.service';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SlideshowComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,14 @@ import { WINDOW_PROVIDERS } from './window.service';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    SlideshowModule
+    SlideshowModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatAutocompleteModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
