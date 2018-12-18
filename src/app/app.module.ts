@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {SlideshowModule} from 'ng-simple-slideshow';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,14 +13,20 @@ import { WINDOW_PROVIDERS } from './window.service';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { TestimonialsCarouselComponent } from './testimonials-carousel/testimonials-carousel.component';
+
+import { NguCarouselModule } from '@ngu/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SlideshowComponent,
     FormComponent,
+    TestimonialsCarouselComponent
   ],
   imports: [
+    NguCarouselModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -37,7 +43,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MDBBootstrapModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
