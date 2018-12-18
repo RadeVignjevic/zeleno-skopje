@@ -3,6 +3,8 @@ import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import {MatSnackBar} from '@angular/material';
+import { Idea } from '../idea';
+import { IdeasService } from '../ideas.service';
 
 @Component({
   selector: 'app-form',
@@ -22,7 +24,7 @@ export class FormComponent implements OnInit{
     idea: [null, Validators.required]
   });
 
-  constructor(private fb: FormBuilder, public snackBar: MatSnackBar) {}
+  constructor(private fb: FormBuilder, public snackBar: MatSnackBar, private ideasService: IdeasService) {}
 
   ngOnInit(): void {
     this.filteredOptions = this.cityControl.valueChanges
@@ -40,6 +42,12 @@ export class FormComponent implements OnInit{
   onSubmit() {
     this.snackBar.open("Your idea has been sent!", "Ok", {
       duration: 2000,
+    });
+
+    this.ideasService.addIdea({
+      title: "Test person",
+      text: "Test Dobra idea",
+      city: "Test"
     });
   }
 }

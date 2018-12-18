@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
+import { Idea } from '../idea';
+import { IdeasService } from '../ideas.service';
 
 @Component({
   selector: 'app-ideas-carousel',
@@ -9,33 +11,10 @@ import { NguCarousel } from '@ngu/carousel';
 export class IdeasCarouselComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray: any;
   public carouselOptions: NguCarousel;
-  public ideas = [{
-    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Jhone Doe',
-    city: 'Skopje'
-  }, {
-    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Adamr Smith',
-    city: 'Kavadarci'
-  }, {
-    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Jhone White',
-    city: 'Skopje'
-  }, {
-    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Davor White',
-    city: 'Skopje'
-  }, {
-    text: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi voluptas vero iusto fuga quos totam eius,
-    atis magnam tempora doloribus ducimus dolorem culpa animi beatae tenetur! Sapiente, quia tempora."`,
-    title: 'Jessica Hiche',
-    city: 'Bitola'
-  }]
-  constructor() { }
+  public ideas: Idea[];
+  constructor(private ideasService: IdeasService) {
+    this.ideas = this.ideasService.getIdeas();
+   }
 
   ngOnInit() {
     this.carouselOptions = {
