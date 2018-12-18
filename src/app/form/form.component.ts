@@ -17,7 +17,7 @@ export class FormComponent implements OnInit{
   filteredOptions: Observable<string[]>;
 
   addressForm = this.fb.group({
-    firstName: [null, Validators.required],
+    firstName: [null, [Validators.required, Validators.minLength(3)]],
     lastName: [null, Validators.required],
     city: [this.cityControl, Validators.required],
     email: [null, Validators.email],
@@ -45,9 +45,10 @@ export class FormComponent implements OnInit{
     });
 
     this.ideasService.addIdea({
-      title: "Test person",
-      text: "Test Dobra idea",
-      city: "Test"
+      title: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
+      text: this.addressForm.get('idea').value,
+      city: this.addressForm.get('city').value.value
     });
+  
   }
 }

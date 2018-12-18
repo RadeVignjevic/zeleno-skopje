@@ -11,22 +11,22 @@ export class IdeasService {
     this.ideas = [
       {
         title: "Davor B.",
-        text: "Epten Dobra idea",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue neque gravida in fermentum et sollicitudin.",
         city: "Skopje"
       },
       {
         title: "Bobit B.",
-        text: "Epten Dobra idea",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue neque gravida in fermentum et sollicitudin.",
         city: "Kavadarci"
       },
       {
         title: "Nevena B.",
-        text: "Epten Dobra idea",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue neque gravida in fermentum et sollicitudin.",
         city: "Skopje"
       },
       {
         title: "Rade B.",
-        text: "Epten Dobra idea",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue neque gravida in fermentum et sollicitudin.",
         city: "Skopje"
       },
     ]
@@ -37,6 +37,6 @@ export class IdeasService {
   }
 
   addIdea(idea: Idea): void {
-    this.ideas.push(idea);
+    this.ideas.unshift(idea);
   }
 }

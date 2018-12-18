@@ -27,7 +27,7 @@ export class IdeasCarouselComponent implements OnInit {
       },
       load: 2,
       touch: true,
-      loop: true
+      loop: false
     }
   }
 
