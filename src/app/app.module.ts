@@ -21,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { IdeasCarouselComponent } from './ideas-carousel/ideas-carousel.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
-import {LineChartComponent} from './charts/charts.component';
+import {ChartsComponent} from './charts/charts.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {LineChartComponent} from './charts/charts.component';
     FormComponent,
     AboutComponent,
     IdeasCarouselComponent,
-    LineChartComponent
+    LineChartComponent,
+    PieChartComponent,
+    ChartsComponent
   ],
   imports: [
     NguCarouselModule,

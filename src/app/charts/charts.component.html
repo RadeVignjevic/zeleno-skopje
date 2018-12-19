@@ -1,12 +1,18 @@
-<div style="display: block">
-  <canvas mdbChart
-          [chartType]="chartType"
-          [datasets]="chartDatasets"
-          [labels]="chartLabels"
-          [colors]="chartColors"
-          [options]="chartOptions"
-          [legend]="true"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)">
-  </canvas>
-</div>
+
+<section class="charts-section">
+    <div class="container">
+        <div class="row no-gutters">
+          <div class="col">
+            <line-chart></line-chart>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+              <pie-chart></pie-chart>
+          </div>
+          <div class="col-sm-4 ml-auto">
+              <pie-chart></pie-chart>
+          </div>
+        </div>
+      </div>
+</section>

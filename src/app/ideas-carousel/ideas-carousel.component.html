@@ -18,7 +18,7 @@
                 <span class="user-subtitle text-muted">{{idea.city}}</span>
               </div>
               <div class="thumbs-up-container">
-                  <a href="#!" class="card-link" (click)="onUpvoteClick(idea)">
+                  <a href="#!" class="card-link" [class.disabled]="idea.canUpvote" (click)="onUpvoteClick(idea); idea.canUpvote = false">
                     <mat-icon matBadge={{idea.upvotes}} matBadgeColor="accent" class="card-icon">thumb_up</mat-icon>
                   </a>
               </div>

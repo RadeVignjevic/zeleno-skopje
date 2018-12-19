@@ -47,7 +47,8 @@ export class FormComponent implements OnInit{
     this.ideasService.addIdea({
       title: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
       text: this.addressForm.get('idea').value,
-      city: this.addressForm.get('city').value.value
+      city: this.addressForm.get('city').value.value,
+      upvotes: 0
     });
   
   }

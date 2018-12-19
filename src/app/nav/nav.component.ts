@@ -27,7 +27,7 @@ export class NavComponent {
   @HostListener("window:scroll", [])
   onWindowScroll() {
    let number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
-    if (number > window.innerHeight - 100) {
+    if (number > window.innerHeight - 50) {
       this.navIsTransparent = false;
     } else {
       this.navIsTransparent = true;
