@@ -22,7 +22,8 @@
       bottom: 25px;
       left: 32px;
       right: 0;
-      margin: auto;
+      width: 50%;
+      //margin: auto;
       .user-photo {
         float: left;
         margin-right: 8px;
@@ -64,4 +65,27 @@
 }
 .home-section mat-card:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumb-up-icon {
+  float: right;
+  padding: 1.4rem;
+
+  &:hover {
+    color: teal;
+  }
+}
+
+.card-icon {
+  padding: 1rem;
+}
+
+.card-link {
+  float: right;
+  margin-top: 0.5rem;
+  color: gray;
+
+  &:hover {
+    color: teal;
+  }
 }
