@@ -69,7 +69,7 @@
                   </div>
                   <div class="row">
                     <div class="col full-width">
-                          <mat-checkbox>Send your idea anonymously.</mat-checkbox>
+                          <mat-checkbox (change)="isAnonymous = !isAnonymous">Send your idea anonymously.</mat-checkbox>
                     </div>
                   </div>
                 </mat-card-content>

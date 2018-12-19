@@ -15,6 +15,7 @@ export class FormComponent implements OnInit{
   cityControl = new FormControl();
   options: string[] = ['Skopje', 'Gostivar', 'Strumica', 'Bitola', 'Kavadarci'];
   filteredOptions: Observable<string[]>;
+  public isAnonymous: boolean = false;
 
   addressForm = this.fb.group({
     firstName: [null, [Validators.required, Validators.minLength(3)]],
@@ -44,12 +45,16 @@ export class FormComponent implements OnInit{
       duration: 2000,
     });
 
-    this.ideasService.addIdea({
+    var idea: Idea = {
       title: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
       text: this.addressForm.get('idea').value,
       city: this.addressForm.get('city').value.value,
       upvotes: 0
-    });
+    }
+    if (this.isAnonymous) {
+      idea.title = "Anonymous";
+    }
+    this.ideasService.addIdea(idea);
   
   }
 }
