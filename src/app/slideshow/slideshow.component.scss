@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,900');
+
 .logo{
   position: absolute;
-  top: 15%;
-  left: 40%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 100px;
+  font-size: 5rem;
 }
-.logo-text{
+.logo-text1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
 
-  p{
-    position: relative;
-    bottom: 108px;
-    left: 23px;
-    font-size: 37px;
-    color: green;
-    font-family: Roboto;
-  }
+.logo-text2 {
+  font-weight: 200;
 }
 
 .carousel-inner{
