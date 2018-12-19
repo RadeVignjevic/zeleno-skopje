@@ -3,4 +3,6 @@ export class Idea {
     title: string;
     city: string;
     upvotes?: number;
+
+    canUpvote?: boolean = true;
 }
