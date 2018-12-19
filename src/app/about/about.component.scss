@@ -10,15 +10,16 @@
     color: green;
 
   }
-  button {
-
+  .social{
+    display: inline-block;
+    position: relative;
+    left: 85%;
+    padding: 5px;
+    button {
       background-color: transparent;
+      margin: 2px;
     }
-
-
-
-
-
+  }
 
   p{
     position: relative;
