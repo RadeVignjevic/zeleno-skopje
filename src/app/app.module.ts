@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { IdeasCarouselComponent } from './ideas-carousel/ideas-carousel.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import {LineChartComponent} from './charts/charts.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { NguCarouselModule } from '@ngu/carousel';
     SlideshowComponent,
     FormComponent,
     AboutComponent,
-    IdeasCarouselComponent
+    IdeasCarouselComponent,
+    LineChartComponent
   ],
   imports: [
     NguCarouselModule,
@@ -50,7 +53,7 @@ import { NguCarouselModule } from '@ngu/carousel';
     MatSnackBarModule,
     MatAutocompleteModule,
     HttpClientModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
