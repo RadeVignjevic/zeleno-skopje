@@ -7,6 +7,10 @@
   margin: 20px auto;
 }
 
+.mat-card {
+  box-shadow: unset;
+}
+
 .mat-card-content {
   margin-left: 20px;
 }
@@ -51,3 +55,24 @@
     margin-left: 0;
   }
 }
+
+
+.form-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-image {
+  width: 70%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-image-container {
+    display: none;
+  }
+  .mat-card-subtitle {
+    text-align: center;
+  }
+}
+
