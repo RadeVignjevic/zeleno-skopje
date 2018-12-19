@@ -37,6 +37,11 @@
 }
 
 .video-fluid {
-    width: 100vw;
     max-width: unset;
+}
+
+@media (min-width: 1441px) {
+  .video-fluid {
+    width: 100vw;
+  }
 }
