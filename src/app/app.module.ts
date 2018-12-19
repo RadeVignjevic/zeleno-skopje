@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
+import { MatCheckboxModule, MatBadgeModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
   MatSelectModule, MatRadioModule, MatCardModule, MatSnackBarModule, MatAutocompleteModule} from '@angular/material';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { WINDOW_PROVIDERS } from './window.service';
@@ -54,6 +54,8 @@ import {LineChartComponent} from './charts/charts.component';
     MatAutocompleteModule,
     HttpClientModule,
     MDBBootstrapModule,
+    MatCheckboxModule,
+    MatBadgeModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]

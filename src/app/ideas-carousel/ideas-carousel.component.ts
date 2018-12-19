@@ -31,4 +31,8 @@ export class IdeasCarouselComponent implements OnInit {
     }
   }
 
+  onUpvoteClick(idea: Idea) {
+    idea.upvotes++;
+  }
+
 }

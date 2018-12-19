@@ -76,10 +76,6 @@
   }
 }
 
-.card-icon {
-  padding: 1rem;
-}
-
 .card-link {
   float: right;
   margin-top: 0.5rem;
@@ -88,4 +84,14 @@
   &:hover {
     color: teal;
   }
+}
+
+.card-contents {
+  width: 100%;
+}
+
+.thumbs-up-container {
+  width: 50%;
+  float: right;
+  padding: 1rem;
 }
