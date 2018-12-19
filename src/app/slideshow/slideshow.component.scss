@@ -20,8 +20,24 @@
   font-weight: 200;
 }
 
+.carousel-item {
+  max-height: 100vh;
+}
+
 .view {
   max-height: 100vh;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .video-fluid {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .view {
+    max-width: none;
+  }
 }
 
 
