@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-import { MatAutocompleteModule } from '@angular/material';
 import {MatSnackBar} from '@angular/material';
+import { Idea } from '../idea';
+import { IdeasService } from '../ideas.service';
 
 @Component({
   selector: 'app-form',
@@ -16,14 +17,14 @@ export class FormComponent implements OnInit{
   filteredOptions: Observable<string[]>;
 
   addressForm = this.fb.group({
-    firstName: [null, Validators.required],
+    firstName: [null, [Validators.required, Validators.minLength(3)]],
     lastName: [null, Validators.required],
     city: [this.cityControl, Validators.required],
     email: [null, Validators.email],
     idea: [null, Validators.required]
   });
 
-  constructor(private fb: FormBuilder, public snackBar: MatSnackBar) {}
+  constructor(private fb: FormBuilder, public snackBar: MatSnackBar, private ideasService: IdeasService) {}
 
   ngOnInit(): void {
     this.filteredOptions = this.cityControl.valueChanges
@@ -42,5 +43,12 @@ export class FormComponent implements OnInit{
     this.snackBar.open("Your idea has been sent!", "Ok", {
       duration: 2000,
     });
+
+    this.ideasService.addIdea({
+      title: this.addressForm.get('firstName').value + " " + this.addressForm.get('lastName').value,
+      text: this.addressForm.get('idea').value,
+      city: this.addressForm.get('city').value.value
+    });
+  
   }
 }
