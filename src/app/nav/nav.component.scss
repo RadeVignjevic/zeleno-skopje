@@ -39,6 +39,13 @@
   }
 }
 
+::ng-deep .mat-icon{
+  height:48px !important;
+  width:48px !important;
+  font-size:32px !important;
+}
+
+
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
