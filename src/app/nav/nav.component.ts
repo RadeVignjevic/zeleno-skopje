@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { WINDOW } from "../window.service";
 
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -32,6 +33,11 @@ export class NavComponent {
     } else {
       this.navIsTransparent = true;
     }
+  }
+
+  scroll(id) {
+    let el = document.getElementById(id);
+    el.scrollIntoView( {behavior: 'smooth', block: 'start'});
   }
 }
 
