@@ -29,6 +29,7 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 import {GoTopButtonModule} from 'ng2-go-top-button';
 import { FooterComponent } from './footer/footer.component';
+import { PlantComponent } from './plant/plant.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     LineChartComponent,
     PieChartComponent,
     ChartsComponent,
-    FooterComponent
+    FooterComponent,
+    PlantComponent
   ],
   imports: [
     NguCarouselModule,
