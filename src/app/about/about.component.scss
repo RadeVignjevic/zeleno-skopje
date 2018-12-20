@@ -1,4 +1,4 @@
-.about{
+/*.about{
 
   height: 400px;
   justify-content: center;
@@ -29,3 +29,47 @@
     text-align: center;
   }
 }
+*/
+
+.about-section {
+  padding: 120px 0;
+  height: 80vh;
+}
+
+.about-text {
+  text-align: center;
+  .display-3 {
+    font-weight: 400;
+  }
+}
+
+.social {
+  font-size: 2.5rem;
+}
+
+.fb-icon {
+  &:hover {
+    color: #3B5998;
+    cursor: pointer;
+  }
+}
+
+.linkedin-icon {
+  &:hover {
+    color: #0077B5;
+    cursor: pointer;
+  }
+}
+
+.twitter-icon {
+  &:hover {
+    color: #1DA1F2;
+    cursor: pointer;
+  }
+}
+.about-image-container {
+  background-color: aquamarine;
+  height: 300px;
+}
+
+

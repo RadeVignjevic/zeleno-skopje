@@ -1,22 +1,27 @@
-<div class="about">
-  <h1>About</h1>
-  <div class="social">
-    <button mat-mini-fab>
-      <mat-icon svgIcon="facebook-icon"></mat-icon>
-    </button>
-    <button mat-mini-fab>
-      <mat-icon svgIcon="linkdin-icon"></mat-icon>
-    </button>
-    <button mat-mini-fab>
-      <mat-icon svgIcon="twitter-icon"></mat-icon>
-    </button>
+<section class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col about-image-container"></div>
+      <div class="col about-text">
+        <h1 class="display-3">About</h1>
+        <hr />
+        <p>
+          Ecology is not synonymous with environmentalism, natural history, or environmental science. It overlaps with
+          the closely related sciences of evolutionary biology, genetics, and ethology. An important focus for
+          ecologists is to improve the understanding of how biodiversity affects ecological function.
+        </p>
+        <div class="social row mt-4">
+          <div class="col" style="text-align:center">
+            <fa-icon class="fb-icon" [icon]="faFacebook"></fa-icon>
+          </div>
+          <div class="col" style="text-align:center">
+            <fa-icon class="linkedin-icon" [icon]="faLinkedin"></fa-icon>
+          </div>
+          <div class="col" style="text-align:center">
+            <fa-icon class="twitter-icon" [icon]="faTwitter"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum ornare volutpat. Sed eu lorem
-    mattis, auctor justo at, cursus odio. Aliquam mollis eros sed nisi convallis euismod. Praesent eget posuere
-    odio. Aenean sit amet tellus semper, fermentum mauris eget, vulputate lorem. In viverra quam nec semper laoreet.
-    Vestibulum condimentum ex non lacus sollicitudin tristique. Maecenas id magna sed orci eleifend fringilla eget ut
-    sem. Suspendisse maximus venenatis est sit amet pellentesque. Suspendisse non mi id risus rhoncus tristique.
-  </p>
-</div>
+</section>
