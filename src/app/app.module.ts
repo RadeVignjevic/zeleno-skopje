@@ -27,6 +27,9 @@ import {ChartsComponent} from './charts/charts.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 
+import {GoTopButtonModule} from 'ng2-go-top-button';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
     IdeasCarouselComponent,
     LineChartComponent,
     PieChartComponent,
-    ChartsComponent
+    ChartsComponent,
+    FooterComponent
   ],
   imports: [
     NguCarouselModule,
@@ -62,7 +66,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
     MDBBootstrapModule,
     MatCheckboxModule,
     MatBadgeModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    GoTopButtonModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]

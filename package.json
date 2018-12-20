@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl --ssl-key ./cert/localhost.key  --ssl-cert ./cert/localhost.crt",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -34,6 +34,7 @@
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "ng-simple-slideshow": "^1.2.6",
+    "ng2-go-top-button": "^6.0.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
