@@ -12,13 +12,20 @@
         </p>
         <div class="social row mt-4">
           <div class="col" style="text-align:center">
-            <fa-icon class="fb-icon" [icon]="faFacebook"></fa-icon>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaterial.angular.io%2F" target="_blank">
+              <fa-icon class="fb-icon" (click)="fbShare()" [icon]="faFacebook"></fa-icon>
+            </a>
           </div>
           <div class="col" style="text-align:center">
-            <fa-icon class="linkedin-icon" [icon]="faLinkedin"></fa-icon>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//material.angular.io/&title=ZELENO%20SKOPJE&summary=&source="
+              target=_blank>
+              <fa-icon class="linkedin-icon" [icon]="faLinkedin"></fa-icon>
+            </a>
           </div>
           <div class="col" style="text-align:center">
-            <fa-icon class="twitter-icon" [icon]="faTwitter"></fa-icon>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmaterial.angular.io%2F&text=Zeleno%20Skopje" target="_blank">
+              <fa-icon class="twitter-icon" [icon]="faTwitter"></fa-icon>
+            </a>
           </div>
         </div>
       </div>

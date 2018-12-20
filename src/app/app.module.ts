@@ -13,6 +13,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { WINDOW_PROVIDERS } from './window.service';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AboutComponent } from './about/about.component';
