@@ -1,4 +1,5 @@
-<div class="container">
+<section>
+  <div class="container">
     <div class="row">
       <div class="col">
           <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
@@ -80,7 +81,8 @@
             </form>
       </div>
       <div class="col form-image-container">
-        <img class="form-image" src="../../assets/img/bulb.png" alt="">
+        <img class="form-image" src="../../assets/img/bulb.png" (click)="toggleTheme()" alt="">
       </div>
     </div>
   </div>
+</section>

@@ -24,7 +24,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/OneSignalSDKWorker.js",
+              "src/OneSignalSDKUpdater.js"
             ],
             "styles": [
               "src/assets/theme/custom-theme.scss",
@@ -98,9 +100,7 @@
             ],
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/OneSignalSDKWorker.js",
-              "src/OneSignalSDKUpdaterWorker.js"
+              "src/assets"
             ]
           }
         },

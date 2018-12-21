@@ -45,7 +45,7 @@ export class NavComponent {
   toggleTheme(): void {
     console.log("TOGGLE");
     console.log(this.overlay.getContainerElement().classList);
-    if (this.overlay.getContainerElement().classList.contains("dark-theme")) {
+    if (this.overlay.getContainerElement().classList.contains("light-theme")) {
       this.overlay.getContainerElement().classList.remove("light-theme");
       this.overlay.getContainerElement().classList.add("dark-theme");
     } else if (this.overlay.getContainerElement().classList.contains("dark-theme")) {

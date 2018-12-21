@@ -32,8 +32,8 @@
 */
 
 .about-section {
-  padding: 120px 0;
-  height: 80vh;
+  padding-top: 120px;
+  height: 100vh;
 }
 
 .about-text {
@@ -72,9 +72,13 @@
     cursor: pointer;
   }
 }
-.about-image-container {
-  background-color: aquamarine;
-  height: 300px;
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-image-container {
+    display: none;
+  }
+
+  .about-section {
+    height: unset;
+  }
 }
-
-

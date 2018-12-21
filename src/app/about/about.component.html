@@ -1,8 +1,8 @@
 <section class="about-section">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <app-plant></app-plant>
+      <div class="col about-image-container">
+        <img src="../../assets/img/tree.png">
       </div>
       <div class="col about-text">
         <h1 class="display-3">About</h1>
@@ -12,7 +12,10 @@
           the closely related sciences of evolutionary biology, genetics, and ethology. An important focus for
           ecologists is to improve the understanding of how biodiversity affects ecological function.
         </p>
-        <div class="social row mt-4">
+        <p>
+          Share on social media:
+        </p>
+        <div class="social row mt-4 justify-content-center">
           <div class="col" style="text-align:center">
             <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaterial.angular.io%2F" target="_blank">
               <fa-icon class="fb-icon" (click)="fbShare()" [icon]="faFacebook"></fa-icon>

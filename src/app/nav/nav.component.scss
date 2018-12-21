@@ -6,7 +6,7 @@
 }
 
 .transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 
   /deep/ .mat-button-focus-overlay {
     display: none
