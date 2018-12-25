@@ -46,6 +46,16 @@
 }
 
 
+.lightswitch {
+  padding: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .lightswitch {
+    display: none;
+  }
+}
+
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
